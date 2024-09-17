@@ -1,0 +1,162 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+
+header {
+    background-image: url(imgs/360_F_326122335_RKvTXMb4RYkIzk94ZoPjkZQe2CUOVnen.jpg);
+    background-size: cover;
+    padding: 20px;
+    height: 25rem;
+    color: white;
+    opacity: 0.75;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 3.5rem;
+}
+
+main p{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem ;
+    padding-bottom: 5rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    margin-left: 7.4rem;
+}
+
+
+nav a:hover{
+    color: black;
+    transition: 0.4s ease;
+    border-bottom: 1px solid white; 
+}
+
+.featured {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.cardC {
+    background-image: url(imgs/Cafe-de-Colombia.jpg);
+    background-blend-mode: soft-light;
+    width: 380px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+}
+
+.cardI {
+    background-image: url(imgs/cargo-container-ship-vessel-carrying-600nw-2341166795.webp) ;
+    width: 380px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; 
+    margin: 10px;
+}
+
+.cardN {
+    background-image: url(imgs/carrocafe.jpeg);
+    background-size: cover;
+    width: 380px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+}
+
+.cardC a, 
+.cardI a, 
+.cardN a {
+    text-decoration: none;
+}
+
+.cardC h2, 
+.cardI h2, 
+.cardN h2 {
+    color: white;
+    padding-top: 1.8rem;
+    margin: 80px ;
+}
+
+.cardC:hover,
+.cardI:hover,
+.cardN:hover {
+    opacity: 0.7;
+
+}
+
+.about{
+    margin-bottom: 40rem;
+}
+
+.info {
+    background-image: url(imgs/Exportación-de-café.webp);
+    background-size: cover;
+    background-position-y: center;
+    height: 28rem;
+    opacity: 0.8;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info h2{
+    color: rgb(255, 255, 255);
+    font-size: 3.3rem;
+    margin-left: 3rem;
+    width: 30%;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    width: 11rem;
+    height: 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3.5rem;
+    margin-inline: 60rem;
+    font-size: 30px;
+    border-radius: 7px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    transition: 0.6s ease;
+}
