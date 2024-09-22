@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: #99a3a4;
+    background-size: cover;
+    background-position: center center;
+    height: 10rem;
+    color: white;
+    filter: brightness(95%);
+}
+
+.nav > h1 {
+    font-size: 2.4rem;
+    margin: 10px;
+}
+
+main h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem ;
+    padding-bottom: 5rem;
+}
+
+main h2 {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.logo {
+    width: 9rem;
+    margin-inline: 3rem;
+    padding-bottom: 15px;
+}
+
+nav ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+nav a:hover{
+    color: rgb(114, 110, 110);
+    transition: 0.4s ease;
+    border-bottom: 1px solid white; 
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../imgs/Exportación-de-Café-Cover.jpg');
+    padding: 50px;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    margin-top: 1px;
+    animation: slideIn 1.2s ease-out;
+    filter: brightness(90%);
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 90px;
+}
+
+.info {
+    background-color: white;
+    padding: 50px 30px;
+    text-align: center;
+    animation: slideIn 1.3s ease-out;
+}
+
+.info h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    width: 75%;
+    background-color: #868885b6;
+    border-radius: 10px;
+    margin-inline: auto;
+    animation: slideIn 1.5s ease-out;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.map-icon {
+    margin-right: 20px;
+}
+
+.map-icon img {
+    width: 15rem;
+    height: auto;
+}
+
+.info-list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-list li::before {
+    content: "•";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.featured {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px;
+    animation: slideIn 1.5s ease-out;
+    padding-top: 7rem;
+}
+
+.img {
+    width: 25rem;
+    border-radius: 10px;
+}
+
+.text {
+    margin: 4rem;
+    font-size: 1.4rem;
+    padding: 5px -25px;
+}
+
+.container {
+    margin: 4rem;
+    padding-top: 1rem ;
+    animation: slideIn 2.5s ease-out;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color:  white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-inline: 4rem;
+}
+
+.benefit .icon {
+    flex: 0 0 50px;
+    margin-right: 20px;
+}
+
+.benefit .icon img {
+    width: 7rem;
+}
+
+.benefit .text h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.benefit .text p {
+    color: #1f1f1f;
+}
+
+.benefit:last-child {
+    margin-bottom: 0;
+}
+
+
+.containerin {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 3s ease-out;
+
+}
+
+.containerin h1 {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.containerin ul {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-inline: 20rem;
+}
+
+.containerin ul li {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.containerin ul li::before {
+    content: '•';
+    color: black;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -20px;
+}
+
+.containerf {
+    background-image: url(../imgs/sistema-produccion-tecnificado-cafe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+    width: 100%;
+    animation: slideIn 3.2s ease-out;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.containerf h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    opacity: .8;
+    transition: .4s ease-in-out;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fot{
+    background-color: #99a3a4;
+    height: 19rem;
+}
+
+.infofotr {
+    margin: 9px;
+}
+
+.infofotr h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+}
+
+.infofotr p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 6rem;
+}
+
+.infofot{
+    margin: 8px;
+}
+
+.infofot ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.infofot a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.infofot a:hover{
+    color: black;
+    transition: 0.4s ease;
+    border-bottom: 1px solid white; 
+}
+
+.infofot h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes img {
+    width: 5rem;
+}
+
+.imgfo {
+    padding-top: 8rem;
+    margin-inline: .5rem;
+    margin-right: 3rem;
+}
+
+.imgfo:hover {
+    transform: translateY(-6px);
+}
+
+.lineasep {
+    float: right;
+    width: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    background-color: black;
+    color: white;
+    text-align: center;
+}

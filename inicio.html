@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
+    <link rel="shortcut icon" href="./imgs/coffe_13888376.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/99b7157d08.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Cafe Viajero</title>
 </head>
 <body>
     <header>
     <div class='nav'>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Mayorista</a></li> 
-                <li><a href="#">Internacional</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="./htmlnavs/nosotros.html">Nosotros</a></li>
+                <li><a href="./htmlnavs/Mayoristas.html">Mayorista</a></li> 
+                <li><a href="./htmlnavs/internacional.html">Internacional</a></li>
+                <li><a href="">Productos</a></li>
                 <li><a href="#">Preparaciones</a></li>
-                <li><a href="#">Contactanos</a></li>
             </ul>
         </nav>
     </div>
@@ -27,17 +28,17 @@
     </header>
 
     <main>
-        <p>Descubre la excelencia de nuestro café y explora las posibilidades de exportación.</p>
+        <h3 class=''>Descubre la excelencia de nuestro café y explora las posibilidades de exportación.</h3>
         <section class="featured">
             <a href='#' class="card">
-                <h2>¿Por qué café Colombiano?</h2>
+                <h2>Nuestros productos</h2>
                 <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
             </a>
-            <a href='#' class="card">
+            <a href='./htmlnavs/internacional.html' class="card">
                 <h2>Mercado Internacional</h2>
                 <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
             </a>
-            <a href='#' class="card">
+            <a href='./htmlnavs/Mayoristas.html' class="card">
                 <h2>Mercado Nacional</h2>
                 <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
             </a>
@@ -46,12 +47,82 @@
         <section class="about">
             <div class='info'>
                 <h2>Somos productores y exportadores de café colombiano de alta calidad.</h2>
-                <a href="#" class="btn">Conocer más</a>
+                <a href="./htmlnavs/nosotros.html" class="btn">Conocer más</a>
+            </div>
+        </section>
+
+        <section class='informa'>
+            <div class="inform">
+                <div class='logcont'>
+                <img class='log' src="./imgs/coffee-bag_10770685 (1).png" alt="Grano de cafe">
+            </div>
+                <p>
+                    Somos meticulosamente cuidadosos con nuestro café, desde la postcosecha hasta el producto final, garantizando excelente calidad, precios y servicios.
+                </p>
+            </div>
+
+            <div class="inform">
+                <div class='logcont'>
+                    <img class='log' src="./imgs/coffee-beans_8327192 (2).png" alt="Tueste de cafe">
+                </div>
+                <p>
+                    El tueste es la esencia de café viajero. Por eso nos apoyamos de la ciencia y la tecnología para desarrollar los sabores y la consistencia perfecta
+                </p>
+            </div>
+
+            <div class="inform">
+                <div class='logcont'>
+                    <img class='log' src="./imgs/coffee-cup_3332326 (1).png" alt="cafe">
+                </div>
+                
+                <p>
+                    Innovamos para ofrecerte un café de calidad superior, que despierte tus sentidos con sobresalientes sabores frutales, dulces y agradables al gusto. ¡Un placer para disfrutar todos los días!
+                </p>
             </div>
         </section>
     </main>
 
-    <footer>
+        <footer class='fot'>
+            <div class='infofotr'>
+                <h2>Cafe Viajero</h2>
+                <p>Correo: Cafeviajero01@gmail.com</p>
+                <p>Numero: 39-2303-3213</p>
+                <p>Direccion: Cr 89B #102-20</p>
+                <p>Medellin, Antioquia</p>
+            </div>
+            <hr class='lineasep'>
+            <div class='infofot'>
+                <h2>Enlaces</h2>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="./htmlnavs/nosotros.html">Nosotros</a></li>
+                    <li><a href="./htmlnavs/Mayoristas.html">Mayorista</a></li> 
+                    <li><a href="./htmlnavs/internacional.html">Internacional</a></li>
+                    <li><a href="#">Preparaciones</a></li>
+                </ul>
+            </div>
+            <hr class='lineasep'>
+            <div class='redes'>
+                <div class='imgfo'>
+                    <a href="#">
+                        <img src="./imgs/facebook (2).png" alt="">
+                    </a>
+                </div>
+
+                    <div class='imgfo'>
+                    <a href="#">
+                        <img src="./imgs/instagram (1).png" alt="">
+                    </a>
+                </div>
+
+                <div class='imgfo'>
+                    <a href="">
+                        <img src="./imgs/whatsapp (2).png" alt="">
+                    </a>
+                </div>
+            </div>
         </footer>
+        <address> @Derechos reservados CafeViajero 2024  <b>Desarollado por: Alejo</b></address>
 </body>
 </html>
