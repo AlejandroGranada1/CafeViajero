@@ -361,6 +361,107 @@ button:hover {
     transition: .4s ease-in-out;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.fot {
+    background-color: #99a3a4;
+    height: auto; 
+    width: 100%; 
+    padding: 1rem;
+}
+
+.infofotr, .infofot {
+    flex: 1 1 300px; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.infofotr h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+}
+
+.infofotr p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 6rem;
+}
+
+.infofot{
+    margin: 8px;
+}
+
+.infofot ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.infofot a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.infofot a:hover{
+    color: black;
+    transition: 0.4s ease;
+    border-bottom: 1px solid white; 
+}
+
+.infofot h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes img {
+    width: 5rem;
+}
+
+.imgfo {
+    padding-top: 8rem;
+    margin-inline: .5rem;
+    margin-right: 3rem;
+}
+
+.imgfo:hover {
+    transform: translateY(-6px);
+}
+
+.lineasep {
+    float: right;
+    width: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 footer{
     display: flex;
     justify-content: space-between;
@@ -456,3 +557,210 @@ address {
     color: white;
     text-align: center;
 }
+
+/* Pantallas pequeñas  */
+@media (max-width: 768px) {
+    header {
+        height: 8rem;
+    }
+    
+
+    nav ul {
+        flex-direction: column;
+    }
+
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav ul li {
+        margin: 0px 5px;
+    }
+
+    .logo {
+        width: 6rem;
+        margin-inline: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+        height: 20rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+
+    .info-section {
+        width: 90%;
+    }
+
+    .featured {
+        flex-direction: column;
+        margin-inline: 10px;
+    }
+
+    .img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .benefit {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .containerin ul {
+        margin-inline: 2rem;
+    }
+
+    .containerf {
+        height: 25rem;
+    }
+
+    .form-box {
+        max-width: 90%;
+    }
+
+    footer {
+        display: flex;  
+        justify-content: center;
+    }
+
+    .fot {
+        margin-bottom: -0.6rem;
+    }
+
+    .infofotr {
+        width: 30%;
+        margin-left: -7.5rem;
+    }
+
+    .infofot{
+        width: 30%;
+        margin-left: -4rem;
+    }
+
+        .infofotr p {
+        font-size: 1rem;
+    }
+
+    .infofot a{
+        font-size: 1.2rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .redes img {
+        width: 2.5rem;
+    }
+
+    .lineasep {
+        display: none;
+    }
+}
+
+/* Pantallas medianas (tablets y móviles en horizontal) */
+@media (max-width: 1024px) {
+    header {
+        height: 9rem;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        height: 25rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        padding-top: 40px;
+    }
+
+    .info-section {
+        width: 85%;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 25rem;
+        margin-inline: auto;
+    }
+
+    .benefit {
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .containerin {
+        margin-bottom: 3rem;
+    }
+
+    .containerin ul {
+        margin-inline: 5rem;
+    }
+
+    .containerf {
+        height: 38rem;
+    }
+
+    .form-box {
+        max-width: 80%;
+    }
+
+    .infofot ul {
+        padding: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .infofotr h2, .infofot h2 {
+        font-size: 1.6rem;
+    }
+
+    .infofotr p, .infofot a {
+        font-size: 1.2rem;
+    }
+
+    .redes img {
+        width: 2.5rem;
+    }
+
+    .lineasep {
+        display: none;
+    }
+}
+

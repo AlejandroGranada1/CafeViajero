@@ -74,7 +74,7 @@ nav li {
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.222rem;
 }
 
 
@@ -371,4 +371,146 @@ address {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .featured {
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        margin: 50px;
+    }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0px 2.6px;
+    }
+
+    .featured {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .img {
+        width: 60%;
+    }
+
+    .benefit {
+        width: 80%;
+    }
+
+    footer {
+        display: flex;  
+        justify-content: center;
+    }
+
+    .infofotr, .infofot {
+        width: 80%; 
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .redes img {
+        width: 3rem;
+
+    }
+
+    .lineasep {
+        display: none;
+    }
 }

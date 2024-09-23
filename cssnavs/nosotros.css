@@ -11,7 +11,6 @@ body{
     overflow-x: hidden;
 }
 
-
 header {
     background-color: #99a3a4;
     background-size: cover;
@@ -55,13 +54,13 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 35px;
+    margin: 0 30px;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 
@@ -211,6 +210,107 @@ main h2 {
     color: #666;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.fot {
+    background-color: #99a3a4;
+    height: auto; 
+    width: 100%; 
+    padding: 1rem;
+}
+
+.infofotr, .infofot {
+    flex: 1 1 300px; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.infofotr h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+}
+
+.infofotr p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 6rem;
+}
+
+.infofot{
+    margin: 8px;
+}
+
+.infofot ul {
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.infofot a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.infofot a:hover{
+    color: black;
+    transition: 0.4s ease;
+    border-bottom: 1px solid white; 
+}
+
+.infofot h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.redes img {
+    width: 5rem;
+}
+
+.imgfo {
+    padding-top: 8rem;
+    margin-inline: .5rem;
+    margin-right: 3rem;
+}
+
+.imgfo:hover {
+    transform: translateY(-6px);
+}
+
+.lineasep {
+    float: right;
+    width: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 footer{
     display: flex;
     justify-content: space-between;
@@ -305,4 +405,100 @@ address {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+/* Estilos responsive para pantallas medianas y pequeñas */
+@media (max-width: 1024px) {
+    .team-member {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .fot {
+        margin-bottom: 2rem;
+    }
+
+    .redes {
+        margin: 1rem 0;
+    }
+
+    .lineasep {
+        display: none;
+    }
+}
+
+/* Estilos para móviles (menos de 768px) */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0px 2.6px;
+    }
+
+    .featured {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .vid {
+        height: 20rem;
+    }
+
+    footer {
+        display: flex;  
+        justify-content: center;
+    }
+
+    .fot {
+        margin-bottom: -0.6rem;
+    }
+
+    .infofotr {
+        width: 35%;
+        margin-left: -4rem;
+    }
+
+    .infofot{
+        width: 40%;
+        margin-left: -3rem;
+    }
+
+        .infofotr p {
+        font-size: 1rem;
+    }
+
+    .infofot a{
+        font-size: 1.2rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .redes img {
+        width: 3rem;
+    }
+
+    .lineasep {
+        display: none;
+    }
+
 }

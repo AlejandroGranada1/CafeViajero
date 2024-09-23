@@ -17,8 +17,7 @@
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="Mayoristas.html">Mayorista</a></li> 
                     <li><a href="internacional.html">Internacional</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="#">Preparaciones</a></li>
+                    <li><a href="produc.html">Productos</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,9 +28,8 @@
             <div class="hero-content">
                 <h1>¿Tienes un café?</h1>
                 <p>Si produces café o te apasiona la comercialización de café</p>
-                <a href="#" class="cta-button">Hablemos</a>
-                </div>
-                <div class="hero-image"></div>
+                <button id="myBtn" class="cta-button">¡Quiero ser distribuidor!</button>
+            </div>
         </section>
 
         <section class='featured'>
@@ -113,6 +111,34 @@
         </section>
     </main>
 
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Contacto para Mayoristas</h2>
+            <form>
+            <label for="name">Nombre y Apellido:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">Ciudad, País:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Acepto los Términos y condiciones y Política de Tratamiento de datos</label>
+                
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </div>
+
     <footer class='fot'>
         <div class='infofotr'>
             <h2>Cafe Viajero</h2>
@@ -125,13 +151,11 @@
         <div class='infofot'>
             <h2>Enlaces</h2>
             <ul>
-                <li><a href="../inicio.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="Mayoristas.html">Mayorista</a></li> 
-                <li><a href="internacional.html">Internacional</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="#">Preparaciones</a></li>
-    
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="./htmlnavs/produc.html">Productos</a></li>
+                <li><a href="./htmlnavs/nosotros.html">Nosotros</a></li>
+                <li><a href="./htmlnavs/Mayoristas.html">Mayorista</a></li> 
+                <li><a href="./htmlnavs/internacional.html">Internacional</a></li>
             </ul>
         </div>
         <hr class='lineasep'>
@@ -156,6 +180,7 @@
         </div>
     </footer>
     <address> @Derechos reservados CafeViajero 2024  <b>Desarollado por: Alejo</b></address>
-    
+
+    <script src='modal.js'></script>
 </body>
 </html>
