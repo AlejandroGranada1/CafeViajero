@@ -74,7 +74,7 @@ nav li {
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.222rem;
+    font-size: 1.6rem;
 }
 
 
@@ -451,6 +451,10 @@ button {
         text-align: center;
     }
 
+    .cta-button {
+        margin-left: 7rem;
+    }
+
     .featured {
         flex-direction: column;
         margin: 50px;
@@ -471,16 +475,29 @@ button {
     header {
         display: flex;
         justify-content: center;
+        height: 8rem;
+    }
+
+    .logo{ 
+        width: 6rem;
     }
 
     nav ul li {
-        margin: 0px 2.6px;
+        margin: 0px 4.4px;
+    }
+
+    .nav a {
+        font-size: 1.2;
     }
 
     .featured {
         flex-direction: column;
         align-items: center;
         margin: 20px;
+    }
+
+    .cta-button {
+        margin-left: 7rem;
     }
 
     .img {
@@ -492,22 +509,21 @@ button {
     }
 
     footer {
-        display: flex;  
-        justify-content: center;
-    }
-
-    .infofotr, .infofot {
-        width: 80%; 
-    }
-
-    .redes {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
+        text-align: center;
+    }
+
+    .infofotr h2, .infofot h2 {
+        font-size: 1.7rem;
+    }
+
+    .infofotr p, .infofot a {
+        font-size: 1.3rem;
     }
 
     .redes img {
-        width: 3rem;
-
+        width: 2.5rem;
     }
 
     .lineasep {

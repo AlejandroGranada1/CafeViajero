@@ -440,8 +440,13 @@ address {
     }
 
     nav ul li {
-        margin: 0px 2.6px;
+        margin: 0px 8px;
     }
+
+    .logo{ 
+        width: 7rem;
+    }
+
 
     .featured {
         flex-direction: column;
